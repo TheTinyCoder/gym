@@ -1,0 +1,140 @@
+.join-us{
+    display:flex;
+    gap: 2rem;
+    padding: 2rem;
+    word-spacing: 0.5rem;
+    font-family: 'Poppins';
+    align-items:center;
+    justify-content:center;
+}
+
+.left-j{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.left-j>:nth-child(1){
+    width:25rem;
+    height:0.5rem;
+    background-color:var(--lightgreen);
+}
+
+.left-j>:nth-child(2){
+    font-size: 3rem;
+    font-weight: 700;
+    color:white;
+}
+
+.left-j>:nth-child(3){
+    font-size: 3rem;
+    font-weight: 700;
+    color:white;
+}
+
+.right-j{
+    flex:1;
+}
+
+.email-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.email-container input{
+    padding-left:1rem;
+    color:var(--lightgray);
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    font-family: 'Poppins';
+}
+
+.btn-j{
+    background-color: var(--lightgreen);
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (max-width:700px) {
+    .left-j span{
+        display:flex;
+        font-size:1.5rem;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .right-j{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .email-container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .btn-j{
+        font-size:1rem;
+    }
+
+    .email-container input{
+        padding:1rem 1rem;
+        border-radius: 0.5rem;
+        width:90%;
+        font-size:1rem;
+    }
+}
+
+@media (max-width:992px) {
+    .join-us{
+        flex-direction:column;
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .left-j{
+        align-items:center;
+        justify-content:center;
+    }
+
+    .left-j>:nth-child(1){
+        width:15rem;
+    }
+
+    .left-j>:nth-child(2){
+        font-size: 2rem;
+    }
+
+    .left-j>:nth-child(3){
+        font-size: 2rem;
+    }
+
+    .email-container{
+        align-items:center;
+        justify-content:center;
+    }
+
+    .btn-j{
+        font-size:1rem;
+    }
+
+    .email-container input{
+        padding:1rem 1rem;
+        border-radius: 0.5rem;
+        width:90%;
+        font-size:1rem;
+    }
+}

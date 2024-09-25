@@ -1,0 +1,53 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width:15rem;
+    height: 5rem;
+}
+
+.header-menu{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-menu li:hover{
+    color: var(--green);
+    cursor: pointer;
+    scale:1.2;
+}
+
+@media (max-width: 768px){
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap:20rem;
+    }
+
+    .header-menu{
+        display: none;
+    }
+}
+
+@media (max-width:476px) {
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap:2rem;
+    }
+
+    .logo {
+        width:12rem;
+        height:4rem;
+    }
+}
